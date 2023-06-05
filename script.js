@@ -30,7 +30,7 @@ class Cell {
     }
 
     turnOff() {
-        this.isLit = false;
+        this.isLit = true;
         if (!this.isClicked) {
             this.element.style.backgroundImage = '';
             this.element.style.backgroundColor = 'red';

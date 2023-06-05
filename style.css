@@ -1,6 +1,6 @@
 body {
     background-image: url("./horizont.jpg");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -47,4 +47,12 @@ td {
     background-color: #3e8e41;
     box-shadow: 0 1px #666;
     transform: translateY(4px);
+  }
+
+  @media (max-width: 1399px) {
+    body {
+        background-image: url("./horizont_vertical.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
   }
