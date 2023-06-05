@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Whack-a-Mole</h1>
+        <table class="game-board" id="game-board"></table>
+        <div class="scoreboard" id="scoreboard">
+            <span id="player-score">Player: 0</span>
+            <span id="computer-score">Computer: 0</span>
+        </div>
+        <div id="message"></div>
+        <div id="difficulty">
+            <label for="level">Select difficulty:</label>
+            <select id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button class="start-btn" id="start-btn">Start</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
