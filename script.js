@@ -23,14 +23,14 @@ class Cell {
     }
 
     lightUp() {
-        this.isLit = true;
+        this.isLit = false;
         this.isClicked = false;
         this.element.style.backgroundImage = "url('mole.png')";
         setTimeout(() => this.turnOff(), game.level.delay);
     }
 
     turnOff() {
-        this.isLit = true;
+        this.isLit = false;
         if (!this.isClicked) {
             this.element.style.backgroundImage = '';
             this.element.style.backgroundColor = 'red';
