@@ -52,7 +52,5 @@ td {
   @media (max-width: 1399px) {
     body {
         background-image: url("./horizont_vertical.jpg");
-        background-size:cover;
-        background-repeat: no-repeat;
     }
   }
