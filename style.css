@@ -49,9 +49,8 @@ td {
     transform: translateY(4px);
   }
 
-  @media (max-width: 1399px) {
+  @media (max-width: 1299px) {
     body {
         background-image: url("./horizont_vertical.jpg");
-        height: 100%;
     }
   }
