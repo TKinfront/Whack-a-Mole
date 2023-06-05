@@ -52,5 +52,6 @@ td {
   @media (max-width: 1399px) {
     body {
         background-image: url("./horizont_vertical.jpg");
+        height: 100%;
     }
   }
