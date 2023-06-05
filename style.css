@@ -11,6 +11,7 @@ body {
 }
 
 table {
+    margin-top: 70px;
     border-collapse: collapse;
 }
 
@@ -52,5 +53,9 @@ td {
   @media (max-width: 1299px) {
     body {
         background-image: url("./horizont_vertical.jpg");
+    }
+
+    table {
+        margin-top: 100px;
     }
   }
