@@ -23,7 +23,7 @@ class Cell {
     }
 
     lightUp() {
-        this.isLit = false;
+        this.isLit = true;
         this.isClicked = false;
         this.element.style.backgroundImage = "url('mole.png')";
         setTimeout(() => this.turnOff(), game.level.delay);
