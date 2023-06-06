@@ -38,13 +38,16 @@ class Cell {
         }
     }
 
+    isEmpty() {
+        return this.element.style.backgroundColor === '';
+    }
+
     reset() {
         this.isLit = false;
         this.isClicked = false;
         this.element.style.backgroundImage = '';
         this.element.style.backgroundColor = '';
     }
-
 }
 
 class Game {
@@ -131,21 +134,21 @@ class Game {
     }
 
     lightUpRandomCell() {
-        const unlitCells = [];
+        const unlitEmptyCells = [];
 
         for (let row = 0; row < this.boardSize; row++) {
             for (let col = 0; col < this.boardSize; col++) {
                 const cell = this.cells[row][col];
 
-                if (!cell.isLit && !cell.isClicked) {
-                    unlitCells.push(cell);
+                if (!cell.isLit && !cell.isClicked && cell.isEmpty()) {
+                    unlitEmptyCells.push(cell);
                 }
             }
         }
 
-        if (unlitCells.length > 0) {
-            const randomIndex = Math.floor(Math.random() * unlitCells.length);
-            const cell = unlitCells[randomIndex];
+        if (unlitEmptyCells.length > 0) {
+            const randomIndex = Math.floor(Math.random() * unlitEmptyCells.length);
+            const cell = unlitEmptyCells[randomIndex];
             cell.lightUp();
         }
     }
